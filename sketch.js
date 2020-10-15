@@ -160,6 +160,7 @@ function mouseReleased(){
 function keyPressed(){
   if(keyCode === 32){
       GameState="play";
+      Matter.Body.setPosition(this.polygon,{x:50,y:200});
       slingShot.attach(this.polygon);
   }
 }
